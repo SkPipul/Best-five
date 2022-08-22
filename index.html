@@ -30,81 +30,101 @@ header {
     </header>
     <main class="bg-slate-600">
         <section class="pt-12 grid grid-cols-4 ml-12">
-            <div class="card w-3/4  bg-black  rounded-none">
+            <div class="card w-72 shadow-xl bg-black rounded-none">
                 <figure class="">
-                  <img src="images/messi.jpg" alt="" class="w-full" />
+                  <img src="images/messi 3.jpg" alt="" class="w-full h-96" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                  <h4 id="messi" class="card-title text-white">Lionel Messi</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
-            <div class="card w-3/4  bg-black  rounded-none">
+            <div class="card w-72  bg-black  rounded-none">
                 <figure class="">
                   <img src="images/player2.jpg" alt="" class="w-full " />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                    <h4 id="cavani" class="card-title text-white">Edinson Cavani</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
-            <div class="card w-3/4  bg-black  rounded-none">
+            <div class="card w-72  bg-black  rounded-none">
                 <figure class="">
                   <img src="images/ronaldo.jpg" alt="" class="w-full" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                    <h4 id="ronaldo" class="card-title text-white">Cristiano Ronaldo</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
-              </div>
+            </div>
+            <div class="card w-72  bg-black  rounded-none">
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title text-white text-3xl">Selected-V</h3>
+                    <ol id="player-list" class="list-decimal text-white text-xl">
+                        
+                    </ol>
+                        
+                        <!-- <table class="table w-full ">
+                          <tbody id="player-list">
+                            
+                          </tbody>
+                        </table> -->
+                </div>
+            </div>
         </section>
-        <section class="pt-12 grid grid-cols-4 ml-12">
-            <div class="card w-3/4  bg-black  rounded-none">
+        <section class="pt-12 grid grid-cols-4 ml-12 pb-12">
+            <div class="card w-72  bg-black  rounded-none">
                 <figure class="">
-                  <img src="images/messi.jpg" alt="" class="w-full" />
+                  <img src="images/neymar 2.jpg" alt="" class="w-full h-80" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                  <h4 id="neymar" class="card-title text-white">Neymar Jr</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
-            <div class="card w-3/4  bg-black  rounded-none">
+            <div class="card w-72  bg-black  rounded-none">
                 <figure class="">
-                  <img src="images/player2.jpg" alt="" class="w-full " />
+                  <img src="images/greezman 3.png" alt="" class="w-full h-80" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                    <h4 id="griezman" class="card-title text-white">Antoine Griezman</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
-            <div class="card w-3/4  bg-black  rounded-none">
+            <div class="card w-72  bg-black  rounded-none">
                 <figure class="">
-                  <img src="images/ronaldo.jpg" alt="" class="w-full" />
+                  <img src="images/maria.jpg" alt="" class="w-full h-80" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h4 class="card-title text-white">Lionel Messi</h4>
-                  <p></p>
+                    <h4 id="maria" class="card-title text-white">Angel Di Maria</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12">Select</button>
+                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
-              </div>
+            </div>
+            <div class="card w-72  bg-black  rounded-none">
+                <div class="card-body items-center text-center">
+                    <h3 class="card-title text-white text-3xl">Budget</h3>
+                </div>
+            </div>
         </section>
     </main>
+    <script src="js/player.js"></script>
 </body>
+<footer class="bg-black py-12">
+    <div>
+        <p class="text-center text-white">Copyright @ 2022 All Rights Reserved.</p>
+    </div>
+</footer>
 </html>
+
