@@ -1,10 +1,5 @@
 
-
-function limitttedPlayer(){
-    
-}
-    
-
+// section 1
 
 function addPlayerName(element){
     // console.log(element.parentNode.parentNode.children[0].innerText);
@@ -18,14 +13,15 @@ function addPlayerName(element){
         `;
         // playerList.appendChild(li);
         element.disabled = true;
-        
         const playerLimit = playerList.childNodes.length;
-        console.log(playerLimit);
+        // // console.log(playerLimit);
         if(playerLimit <= 5){
             playerList.appendChild(li);
         }
         else{
-            alert('stop');
+            alert('Your limit is over');
+            element.disabled = false;
         }
+        return playerLimit;
     }
-    
+

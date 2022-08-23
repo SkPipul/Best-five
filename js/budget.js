@@ -4,7 +4,9 @@ function getThePerPlayer(){
     const perPlayerInputString = perPlayerInput.value;
     const perPlayerValue = parseInt(perPlayerInputString);
     // console.log(perPlayerValue);
-    const totalPlayer = perPlayerValue * 5;
+    const playerList = document.getElementById('player-list');
+    const playerLimit = playerList.childNodes.length - 1;
+    const totalPlayer = perPlayerValue * playerLimit;
     return totalPlayer;
 }
 
