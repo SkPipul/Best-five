@@ -1,6 +1,9 @@
 
 
-
+function limitttedPlayer(){
+    
+}
+    
 
 
 function addPlayerName(element){
@@ -14,13 +17,11 @@ function addPlayerName(element){
         </ol>
         `;
         playerList.appendChild(li);
+        element.disabled = true;
         
-        if(playerList.childNodes.length === 6){
-            alert('chup')
+        const playerLimit = playerList.childNodes.length;
+        if(playerLimit === 6){
+            alert('chuppp')
         }
-        // else{
-        //     return playerList;
-        // }
-
     }
     

@@ -37,7 +37,7 @@ header {
                 <div class="card-body items-center text-center">
                   <h4 id="messi" class="card-title text-white">Lionel Messi</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ header {
                 <div class="card-body items-center text-center">
                     <h4 id="cavani" class="card-title text-white">Edinson Cavani</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ header {
                 <div class="card-body items-center text-center">
                     <h4 id="ronaldo" class="card-title text-white">Cristiano Ronaldo</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@ header {
                 <div class="card-body items-center text-center">
                   <h4 id="neymar" class="card-title text-white">Neymar Jr</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ header {
                 <div class="card-body items-center text-center">
                     <h4 id="griezman" class="card-title text-white">Antoine Griezman</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -108,18 +108,36 @@ header {
                 <div class="card-body items-center text-center">
                     <h4 id="maria" class="card-title text-white">Angel Di Maria</h4>
                   <div class="card-actions">
-                    <button class="btn btn-primary px-12" onclick="addPlayerName(this)">Select</button>
+                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
                   </div>
                 </div>
             </div>
             <div class="card w-72  bg-black  rounded-none">
-                <div class="card-body items-center text-center">
-                    <h3 class="card-title text-white text-3xl">Budget</h3>
+                <div class="card-body items-center text-center text-white">
+                    <h3 class="card-title text-3xl mb-5">Budget</h3>
+                    <div class="flex  justify-center justify-items-center mb-4">
+                      <h5 class="text-lg">Per Player</h5>
+                      <input class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
+                    </div>
+                    <button class="btn bg-blue-600 px-8 rounded-none">Calculate</button>
+                    <h5 class="text-lg my-2">Player Expenses $<span>0</span></h5>
+                    <div class="flex  justify-center justify-items-center mb-4">
+                      <h5 class="text-lg">Manager</h5>
+                      <input class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
+                    </div>
+                    <div class="flex  justify-center justify-items-center mb-4">
+                      <h5 class="text-lg ml-5">Coach</h5>
+                      <input class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
+                    </div>
+                    <button class="btn bg-blue-600 px-8 rounded-none">Calculate Total</button>
+                    <h5 class="text-lg my-2">Total $<span>0</span></h5>
                 </div>
+                
             </div>
         </section>
     </main>
     <script src="js/player.js"></script>
+    <script src="js/budget.js"></script>
 </body>
 <footer class="bg-black py-12">
     <div>
