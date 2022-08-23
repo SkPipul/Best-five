@@ -8,6 +8,7 @@ function getThePerPlayer(){
     return totalPlayer;
 }
 
+// calculate button append
 document.getElementById('btn-calculate').addEventListener('click', function(){
     // getThePerPlayer();
     const playerExpenses = document.getElementById('player-expenses');
@@ -29,7 +30,7 @@ function totalExpenses(){
     return totalExpenses;
 }
 
-
+// total calculate button append
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
     // totalExpenses();
     const total = document.getElementById('total-expenses');
