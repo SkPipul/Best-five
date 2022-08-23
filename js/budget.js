@@ -1,3 +1,5 @@
+// section 2
+
 // per player budget function
 function getThePerPlayer(){
     const perPlayerInput = document.getElementById('per-player-input');

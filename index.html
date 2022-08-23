@@ -1,148 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Your Favourite Five</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font style added -->
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-<style>
-header {
-    font-family: 'Berkshire Swash', cursive;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Favourite Five</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font style added -->
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <style>
+    header {
+      font-family: 'Berkshire Swash', cursive;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="bg-black">
-            <div  class="flex justify-center items-center pt-12">
-                <div>
-                    <img class="w-3/4" src="images/header section 1_prev_ui (1).png" alt="">
-                </div>
-                <div>
-                    <h1 class="text-6xl font-semibold text-center my-12 text-orange-600">Select Your Favourite Five</h1>
-                    <p class="text-white text-center">Football. Arguably the greatest game to grace the world. Watched, <br> adored and played in every aspect of every continent, mankind simply cannot live without the beautiful game.</p>
-                </div>
-            </div>
-    </header>
-    <main class="bg-slate-600">
-        <section class="pt-12 grid grid-cols-4 ml-12">
-            <div class="card w-72 shadow-xl bg-black rounded-none">
-                <figure class="">
-                  <img src="images/messi 3.jpg" alt="" class="w-full h-96" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h4 id="messi" class="card-title text-white">Lionel Messi</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <figure class="">
-                  <img src="images/player2.jpg" alt="" class="w-full " />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h4 id="cavani" class="card-title text-white">Edinson Cavani</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <figure class="">
-                  <img src="images/ronaldo.jpg" alt="" class="w-full" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h4 id="ronaldo" class="card-title text-white">Cristiano Ronaldo</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-            </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <div class="card-body items-center text-center">
-                    <h3 class="card-title text-white text-3xl mb-8">Selected-V</h3>
-                    <ol id="player-list" class="list-decimal text-white text-xl">
-                        
-                    </ol>
-                        
-                        <!-- <table class="table w-full ">
-                          <tbody id="player-list">
-                            
-                          </tbody>
-                        </table> -->
-                </div>
-            </div>
-        </section>
-        <section class="pt-12 grid grid-cols-4 ml-12 pb-12">
-            <div class="card w-72  bg-black  rounded-none">
-                <figure class="">
-                  <img src="images/neymar 2.jpg" alt="" class="w-full h-80" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h4 id="neymar" class="card-title text-white">Neymar Jr</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <figure class="">
-                  <img src="images/greezman 3.png" alt="" class="w-full h-80" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h4 id="griezman" class="card-title text-white">Antoine Griezman</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <figure class="">
-                  <img src="images/maria.jpg" alt="" class="w-full h-80" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h4 id="maria" class="card-title text-white">Angel Di Maria</h4>
-                  <div class="card-actions">
-                    <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
-                  </div>
-                </div>
-            </div>
-            <div class="card w-72  bg-black  rounded-none">
-                <div class="card-body items-center text-center text-white">
-                    <h3 class="card-title text-3xl mb-5">Budget</h3>
-                    <div class="flex  justify-center justify-items-center mb-4">
-                      <h5 class="text-lg">Per Player</h5>
-                      <input id="per-player-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
-                    </div>
-                    <button id="btn-calculate" class="btn bg-blue-600 px-8 rounded-none">Calculate</button>
-                    <h5" class="text-lg my-2">Player Expenses $<span id="player-expenses">0</span></h5>
-                    <div class="flex  justify-center justify-items-center my-3">
-                      <h5 class="text-lg">Manager</h5>
-                      <input id="manager-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
-                    </div>
-                    <div class="flex  justify-center justify-items-center mb-3">
-                      <h5 class="text-lg ml-5">Coach</h5>
-                      <input id="coach-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="";>
-                    </div>
-                    <button id="btn-calculate-total" class="btn bg-blue-600 px-8 rounded-none">Calculate Total</button>
-                    <h5 class="text-lg my-2">Total $<span id="total-expenses">0</span></h5>
-                </div>
-                
-            </div>
-        </section>
-    </main>
-    <script src="js/player.js"></script>
-    <script src="js/budget.js"></script>
-</body>
-<footer class="bg-black py-12">
-    <div>
-        <p class="text-center text-white">Copyright @ 2022 All Rights Reserved.</p>
+  <!-- heading section -->
+  <header class="bg-black">
+    <div class="flex justify-center items-center pt-12">
+      <div>
+        <img class="w-3/4" src="images/header section 1_prev_ui (1).png" alt="">
+      </div>
+      <div>
+        <h1 class="text-6xl font-semibold text-center my-12 text-orange-600">Select Your Favourite Five</h1>
+        <p class="text-white text-center">Football. Arguably the greatest game to grace the world. Watched, <br> adored
+          and played in every aspect of every continent, mankind simply cannot live without the beautiful game.</p>
+      </div>
     </div>
-</footer>
-</html>
+  </header>
 
+  <!-- main section starts -->
+
+  <main class="bg-slate-600">
+    <!-- section 1 -->
+    <section class="pt-12 grid grid-cols-4 ml-12">
+      <!-- player 1 -->
+      <div class="card w-72 shadow-xl bg-black rounded-none">
+        <figure class="">
+          <img src="images/messi 3.jpg" alt="" class="w-full h-96" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="messi" class="card-title text-white">Lionel Messi</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- player 2 -->
+      <div class="card w-72  bg-black  rounded-none">
+        <figure class="">
+          <img src="images/player2.jpg" alt="" class="w-full " />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="cavani" class="card-title text-white">Edinson Cavani</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- player 3 -->
+      <div class="card w-72  bg-black  rounded-none">
+        <figure class="">
+          <img src="images/ronaldo.jpg" alt="" class="w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="ronaldo" class="card-title text-white">Cristiano Ronaldo</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- player list and selected area -->
+      <div class="card w-72  bg-black  rounded-none">
+        <div class="card-body items-center text-center">
+          <h3 class="card-title text-white text-3xl mb-8">Selected-V</h3>
+          <ol id="player-list" class="list-decimal text-white text-xl">
+
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="pt-12 grid grid-cols-4 ml-12 pb-12">
+
+      <!-- player 4 -->
+      <div class="card w-72  bg-black  rounded-none">
+        <figure class="">
+          <img src="images/neymar 2.jpg" alt="" class="w-full h-80" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="neymar" class="card-title text-white">Neymar Jr</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- player 5 -->
+      <div class="card w-72  bg-black  rounded-none">
+        <figure class="">
+          <img src="images/greezman 3.png" alt="" class="w-full h-80" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="griezman" class="card-title text-white">Antoine Griezman</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- player 6 -->
+      <div class="card w-72  bg-black  rounded-none">
+        <figure class="">
+          <img src="images/maria.jpg" alt="" class="w-full h-80" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h4 id="maria" class="card-title text-white">Angel Di Maria</h4>
+          <div class="card-actions">
+            <button class="btn bg-blue-600 rounded-none px-12" onclick="addPlayerName(this)">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Budget area -->
+      <div class="card w-72  bg-black  rounded-none">
+        <div class="card-body items-center text-center text-white">
+          <h3 class="card-title text-3xl mb-5">Budget</h3>
+          <div class="flex  justify-center justify-items-center mb-4">
+            <h5 class="text-lg">Per Player</h5>
+            <input id="per-player-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="" ;>
+          </div>
+          <button id="btn-calculate" class="btn bg-blue-600 px-8 rounded-none">Calculate</button>
+          <h5" class="text-lg my-2">Player Expenses $<span id="player-expenses">0</span></h5>
+            <div class="flex  justify-center justify-items-center my-3">
+              <h5 class="text-lg">Manager</h5>
+              <input id="manager-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="" ;>
+            </div>
+            <div class="flex  justify-center justify-items-center mb-3">
+              <h5 class="text-lg ml-5">Coach</h5>
+              <input id="coach-input" class="w-2/4 ml-6 py-1 bg-gray-500" type="text" placeholder="" ;>
+            </div>
+            <button id="btn-calculate-total" class="btn bg-blue-600 px-8 rounded-none">Calculate Total</button>
+            <h5 class="text-lg my-2">Total $<span id="total-expenses">0</span></h5>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- main section ends here -->
+
+  <!-- JavaScript file linked -->
+  <script src="js/player.js"></script>
+  <script src="js/budget.js"></script>
+</body>
+<!-- footer -->
+<footer class="bg-black py-12">
+  <div>
+    <p class="text-center text-white">Copyright @ 2022 All Rights Reserved.</p>
+  </div>
+</footer>
+
+</html>
