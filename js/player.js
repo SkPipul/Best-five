@@ -16,12 +16,16 @@ function addPlayerName(element){
            <li>${playerName}</li>
         </ol>
         `;
-        playerList.appendChild(li);
+        // playerList.appendChild(li);
         element.disabled = true;
         
         const playerLimit = playerList.childNodes.length;
-        if(playerLimit === 6){
-            alert('chuppp')
+        console.log(playerLimit);
+        if(playerLimit <= 5){
+            playerList.appendChild(li);
+        }
+        else{
+            alert('stop');
         }
     }
     
